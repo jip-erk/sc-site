@@ -4,7 +4,7 @@
 
 <section>
     <div class="center">
-        <span>Society 4.0</span>
+        <span>Ontdek de domeinnen</span>
         <a href="#page1">
         <button>start hier</button>
         </a>

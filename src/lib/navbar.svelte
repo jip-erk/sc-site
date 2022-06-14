@@ -1,34 +1,89 @@
 <script>
     import logo from '../assets/logo.svg';
+
+
+    //on scroll change navbar color
+    window.onscroll = function() {
+        var navbar = document.getElementById("navbar");
+        if (window.pageYOffset > 100) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    };
+    
+
+
 </script>
 
 <header>
   <nav class="container">
-    <div>
+    <div class="logo">
       <img src={logo} alt="Svelte">
+      <div class="txt">
+        <p>NIEUW</p> 
+        <p>BRABANT</p>
+        <p>ZUID-OOST</p>
+      </div>
     </div>
     <div>
-      <a href="#" class="navLinks">welkom</a>
+      <a href="#" class="navLinks">Welkom</a>
     </div>
     <div>
-      <a href="#" class="navLinks">Portfolio</a>
+      <a href="#" class="navLinks">domeinen</a>
     </div>
     <div>
-      <a href="#" class="navLinks">Portfolio</a>
+      <a href="#" class="navLinks">Voor Wie</a>
     </div>
     <div>
-      <a href="#" class="navLinks">Portfolio</a>
+      <a href="#" class="navLinks">Doe mee</a>
     </div>
     <div>
-      <a href="#" class="navLinks">Portfolio</a>
+      <a href="#" class="navLinks">Producten</a>
+    </div>
+    <div>
+      <a href="#" class="navLinks">Agenda</a>
+    </div>
+    <div>
+      <a href="#" class="navLinks">kennis Bank</a>
+    </div>
+    <div>
+      <a href="#" class="navLinks">Login</a>
     </div>
     
   </nav>
 </header>
 <style>
+
 header{
-  position: absolute;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
   width: 100%;
+}
+p{
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+}
+
+.txt p:nth-child(1){
+  letter-spacing: 0.5em;
+}
+
+.txt p:nth-child(2){
+  letter-spacing: 0.1em;
+}
+
+
+.txt{
+  margin-left: 10px;
+  display: inline-block;
+  text-align:justify;
+  justify-content: space-between;
+  position: relative;
+  
 }
 
 img{
@@ -38,13 +93,11 @@ img{
 
 nav {
   display: grid;
-  grid-template-columns: repeat(7, 0.5fr);
+  grid-template-columns: repeat(9, 0.5fr);
   grid-auto-rows: auto;
-  grid-gap: 1em;
+  grid-gap: 0.1em;
   align-items: center;
   text-align: center;
-
-
 }
 
 @media screen and (max-width: 900px) {
@@ -55,7 +108,6 @@ nav {
  }
 }  
 
-
 .navLinks {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.2em;
@@ -63,6 +115,7 @@ nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
 a{
   position: relative;
   display: inline-block;
@@ -86,5 +139,11 @@ a:hover::after {
   transform: scale(1, 1);
 }
 
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
 
 </style>

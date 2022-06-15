@@ -3,7 +3,7 @@
 </script>
 
 <section>
-test
+<h1>Alhamdulilah</h1>
 </section>
 
 <style>

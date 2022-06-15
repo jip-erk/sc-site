@@ -1,22 +1,18 @@
 <script>
     import logo from '../assets/logo.svg';
+    import { Router, Link, Route } from "svelte-navigator";
 
+    export let background_color;
+    
 
-    //on scroll change navbar color
-    window.onscroll = function() {
-        var navbar = document.getElementById("navbar");
-        if (window.pageYOffset > 100) {
-            navbar.classList.add("navbar-scrolled");
-        } else {
-            navbar.classList.remove("navbar-scrolled");
-        }
-    };
     
 
 
+  
+
 </script>
 
-<header>
+<header style="background-color: {background_color};">
   <nav class="container">
     <div class="logo">
       <img src={logo} alt="Svelte">
@@ -27,28 +23,28 @@
       </div>
     </div>
     <div>
-      <a href="#" class="navLinks">Welkom</a>
+      <Link to="/"><a href=" " class="navLinks">Welkom</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">domeinen</a>
+      <Link to="/"><a href=" " class="navLinks">domeinen</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">Voor Wie</a>
+      <Link to="/voor-wie"><a href=" " class="navLinks">Voor Wie</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">Doe mee</a>
+      <Link to="/"><a href=" " class="navLinks">Doe mee</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">Producten</a>
+      <Link to="/"><a href=" " class="navLinks">Producten</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">Agenda</a>
+      <Link to="/"><a href=" " class="navLinks">Agenda</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">kennis Bank</a>
+      <Link to="/"><a href=" " class="navLinks">kennis Bank</a></Link>
     </div>
     <div>
-      <a href="#" class="navLinks">Login</a>
+      <Link to="/"><a href=" " class="navLinks">Login</a></Link>
     </div>
     
   </nav>
@@ -56,6 +52,7 @@
 <style>
 
 header{
+  z-index: 1000;
   transition: all 0.5s ease-in-out;
   position: fixed;
   width: 100%;

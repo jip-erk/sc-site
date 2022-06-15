@@ -2,6 +2,7 @@
 
 <script>
   
+  import { Router, Link, Route } from "svelte-navigator";
 
   import Nav from './lib/navbar.svelte'
   import Home from './lib/home.svelte'
@@ -22,17 +23,29 @@
 
     <Home />
      <Page1 />
+       <VoorWie />
 
   -->
+  <Router>
 
-  <VoorWie />
+  <Route path="/">
+    <Nav background_color={'none'}/>
+    <Home />
+    <Page1 />
+    {#if $myStore.domain}
+    <DomainPage domain_img={$myStore.img} domain={$myStore.domain}/>
+    {/if}
+  </Route>
+  <Route path="/voor-wie">
+    <Nav background_color={'#e1ccff'}/>
+    <VoorWie />
+  </Route>
 
+</Router>
 
   
 
-  {#if $myStore.domain}
-    <DomainPage domain_img={$myStore.img} domain={$myStore.domain}/>
-  {/if}
+
 
 </main>
 

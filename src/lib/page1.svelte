@@ -63,7 +63,7 @@ function ClickedDomain(Card, card_img){
 section{
     background-color: #ffffff;
     background-size: cover;
-    height: 100vh;
+
     width: 100%;
 }
 
@@ -83,9 +83,8 @@ div.cards {
   max-width: 960px;
   text-align: center;
   position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+
+
 }
 div.card {
 

@@ -10,7 +10,7 @@
   import DomainPage from './lib/domains.svelte';
   import {myStore} from './domain';
   import VoorWie from './lib/Voor-wie.svelte';
-
+  import DoeMee from "./lib/doe-mee.svelte"; 
 
  
 </script>
@@ -39,6 +39,11 @@
   <Route path="/voor-wie">
     <Nav background_color={'#e1ccff'}/>
     <VoorWie />
+  </Route>
+
+  <Route path="/doe-mee">
+    <Nav background_color={'#e1ccff'}/>
+    <DoeMee />
   </Route>
 
 </Router>

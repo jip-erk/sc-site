@@ -32,7 +32,7 @@
       <Link to="/voor-wie"><a href=" " class="navLinks">Voor Wie</a></Link>
     </div>
     <div>
-      <Link to="/"><a href=" " class="navLinks">Doe mee</a></Link>
+      <Link to="/doe-mee"><a href=" " class="navLinks">Doe mee</a></Link>
     </div>
     <div>
       <Link to="/"><a href=" " class="navLinks">Producten</a></Link>

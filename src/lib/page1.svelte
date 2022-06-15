@@ -78,6 +78,7 @@ h2{
 
 
 div.cards {
+
   margin: auto;
   max-width: 960px;
   text-align: center;

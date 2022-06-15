@@ -1,28 +1,39 @@
 
 
 <script>
+  
+
   import Nav from './lib/navbar.svelte'
   import Home from './lib/home.svelte'
   import Page1 from './lib/page1.svelte';
   import DomainPage from './lib/domains.svelte';
   import {myStore} from './domain';
+  import VoorWie from './lib/Voor-wie.svelte';
 
 
  
 </script>
 
 <main>
+  <!-- 
+
   <Nav />
-  <Home />
-  <Page1 />
+
+
+    <Home />
+     <Page1 />
+
+  -->
+
+  <VoorWie />
+
+
+  
 
   {#if $myStore.domain}
     <DomainPage domain_img={$myStore.img} domain={$myStore.domain}/>
   {/if}
 
-
- 
-  
 </main>
 
 <style>

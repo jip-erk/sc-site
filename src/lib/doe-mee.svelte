@@ -13,4 +13,7 @@ section{
     height: 100vh;
     width: 100%;
 }
+h1 {
+    color: black;
+}
 </style>

@@ -5,8 +5,18 @@
     export let background_color;
     
 
-    
-
+    //toggle div logo on click
+  let display = 'flex';
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      background_color = '#e1ccff'; 
+      display = 'none';
+    } else {
+      background_color = '#e1ccff00';
+      display = 'flex';
+    }
+  });
+  
 
   
 
@@ -14,7 +24,7 @@
 
 <header style="background-color: {background_color};">
   <nav class="container">
-    <div class="logo">
+    <div style="display: {display};" class="logo">
       <img src={logo} alt="Svelte">
       <div class="txt">
         <p>NIEUW</p> 
@@ -52,6 +62,7 @@
 <style>
 
 header{
+
   z-index: 1000;
   transition: all 0.5s ease-in-out;
   position: fixed;
@@ -137,6 +148,7 @@ a:hover::after {
 }
 
 .logo{
+
   display: flex;
   justify-content: space-between;
   align-items: center;

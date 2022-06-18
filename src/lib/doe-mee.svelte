@@ -3,14 +3,22 @@
 </script>
 
 <section>
-test
+<div class="center">
+        <h1>Oki</h1>
+    </div>
+    <div class="test">
+    <h1>kunker</h1>
+    </div>
 </section>
 
 <style>
-section{
-    background-color: #ffffff;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
 }
+
 </style>

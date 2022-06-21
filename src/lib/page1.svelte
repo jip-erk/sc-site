@@ -88,7 +88,7 @@ div.cards {
 }
 div.card {
 
-
+  transform: translateY(50px);
   display: inline-block;
   margin: 8px;
   max-width: 300px;
@@ -126,6 +126,9 @@ background-color: #ace281 !important;
 
 }
 
+a{
+  text-decoration: none;
+}
 
 
 </style>

@@ -3,30 +3,32 @@
     import { Router, Link, Route } from "svelte-navigator";
 
     export let background_color;
-    
-
-    //toggle div logo on click
-  let display = 'flex';
+    let height = '100px';
+    let display = 'inline-block';
+  if(background_color){
+  
   window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
       background_color = '#e1ccff'; 
       display = 'none';
+      height = '50px';
+
     } else {
       background_color = '#e1ccff00';
-      display = 'flex';
+      display = 'inline-block';
+      height = '100px';
     }
   });
-  
+  }
 
-  
 
 </script>
 
 <header style="background-color: {background_color};">
   <nav class="container">
-    <div style="display: {display};" class="logo">
-      <img src={logo} alt="Svelte">
-      <div class="txt">
+    <div  class="logo">
+      <img style="height: {height};" src={logo} alt="Svelte">
+      <div style="display: {display};" class="txt">
         <p>NIEUW</p> 
         <p>BRABANT</p>
         <p>ZUID-OOST</p>

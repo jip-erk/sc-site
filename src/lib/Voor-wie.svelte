@@ -2,7 +2,7 @@
 
 </script>
 
-<section>
+<section id="first">
     <div class="center">
         <span>Voor wie</span>
         <a href="#cont">
@@ -31,9 +31,7 @@
             </div>
     </div>
  </section>
-<section>
-   
-</section>
+
 <style>
 section{
     background-color: #ffffff;
@@ -66,7 +64,7 @@ span{
     flex-direction: column;
 }
 
-section{
+#first{
     background-image: url('https://i.imgur.com/4rPdrXI.jpg');
     background-size: cover;
     height: 100vh;

@@ -4,7 +4,7 @@
 
 <section id="first">
     <div class="center">
-        <span>Voor wie</span>
+        <span>Doe Mee!</span>
         <a href="#cont">
         <button>Klik hier</button>
         </a>
@@ -74,7 +74,7 @@ span{
 }
 
 #first{
-    background-image: url('https://i.imgur.com/4rPdrXI.jpg');
+    background-image: url('https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2015&q=80');
     background-size: cover;
     height: 100vh;
     width: 100%;

@@ -12,7 +12,7 @@
   import VoorWie from './lib/Voor-wie.svelte';
   import DoeMee from "./lib/doe-mee.svelte"; 
 
- 
+
 </script>
 
 <main>

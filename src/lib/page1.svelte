@@ -15,23 +15,23 @@ var cards = [
     "Educatie"
 ];
 
-var cards_en = [
-    "Cooperation",
-    "Economy",
-    "Money",
-    "ICT",
-    "Water & Energy",
-    "health",
-    "food",
-    "Life",
-    "Education"
+var cards_img= [
+    "./src/assets/icons/Samenleving.png",
+    "./src/assets/icons/Economie.png",
+    "./src/assets/icons/Geld.png",
+    "./src/assets/icons/ICT.png",
+    "./src/assets/icons/Water & Energie.png",
+    "./src/assets/icons/Gezondheid.png",
+    "./src/assets/icons/voedsel.png",
+    "./src/assets/icons/Samenleving.png",
+    "./src/assets/icons/Educatie.png"
 ];
 
 
 
 function ClickedDomain(Card, card_img){
     $myStore.domain = Card;
-    $myStore.img = "https://source.unsplash.com/300x225/?" + card_img;
+    $myStore.img = card_img;
 } 
 
 
@@ -42,10 +42,10 @@ function ClickedDomain(Card, card_img){
     <div class="cards">
 
         {#each cards as card, i}
-        <a on:click={() => ClickedDomain(card, cards_en[i])} href="#{card}">
+        <a on:click={() => ClickedDomain(card, cards_img[i])} href="#{card}">
             <div class="card">
                 <div class="card__image-holder">
-                <img class="card__image" src="https://source.unsplash.com/300x225/?{cards_en[i]}" alt="wave" />
+                  <img class="card__image" src="{cards_img[i]}" alt="wave" />
                 </div>
                 <div class="card-title">
                 <h2>{card}</h2>
@@ -87,7 +87,8 @@ div.cards {
 
 }
 div.card {
-
+  background-color: #ace281;
+  border-radius: 10px;
   transform: translateY(50px);
   display: inline-block;
   margin: 8px;
@@ -100,8 +101,10 @@ div.card {
   z-index: 1;
 }
 div.card img {
+  width: 70%;
+  margin: auto;
+  display: block;
 
-  max-width: 300px;
 }
 div.card .card__image-holder {
 

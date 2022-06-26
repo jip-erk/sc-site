@@ -4,7 +4,7 @@
 
 <section>
     <div class="center">
-        <span>Ontdek de domeinnen</span>
+        <span>Nieuw Brabant Zuid-Oost</span>
         <a href="#page1">
         <button>start hier</button>
         </a>
@@ -40,7 +40,7 @@ span{
 }
 
 section{
-    background-image: url('https://i.imgur.com/4rPdrXI.jpg');
+    background-image: url('/src/assets/bg-img');
     background-size: cover;
     height: 100vh;
     width: 100%;

@@ -47,7 +47,7 @@ h1{
 
 img{
     height: auto;
-    width: 100%;
+    width: 70%;
     border-radius: 10px;
 }
 

@@ -11,8 +11,12 @@
   import {myStore} from './domain';
   import VoorWie from './lib/Voor-wie.svelte';
   import DoeMee from "./lib/doe-mee.svelte"; 
+  import Producten from "./lib/producten.svelte";
+  import Agenda from "./lib/agenda.svelte";
+  import KennisBank from "./lib/kennisbank.svelte";
+import Kennisbank from "./lib/kennisbank.svelte";
 
-
+import Login from "./lib/login.svelte";
 </script>
 
 <main>
@@ -27,25 +31,37 @@
 
   -->
   <Router>
-
+  <Nav background_color={'none'}/>
   <Route path="/">
-    <Nav background_color={'none'}/>
     <Home />
     <Page1 />
     {#if $myStore.domain}
     <DomainPage domain_img={$myStore.img} domain={$myStore.domain}/>
     {/if}
   </Route>
-  <Route path="/voor-wie">
-    <Nav background_color={'#e1ccff'}/>
+  <Route path="voor-wie">
     <VoorWie />
   </Route>
 
-  <Route path="/doe-mee">
-    <Nav background_color={'#e1ccff'}/>
+  <Route path="doe-mee">
     <DoeMee />
   </Route>
 
+  <Route path="producten">
+    <Producten />
+  </Route>
+
+  <Route path="agenda">
+    <Agenda />
+  </Route>
+
+  <Route path="kennis-bank">
+    <Kennisbank />
+  </Route>
+
+  <Route path="login">
+    <Login />
+  </Route>
 </Router>
 
   

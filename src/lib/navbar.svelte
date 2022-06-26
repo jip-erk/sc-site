@@ -1,4 +1,10 @@
 <script>
+  import { onMount } from "svelte";
+
+onMount(() => {
+  window.scrollTo(0, 0);
+});
+
     import logo from '../assets/logo.svg';
     import { Router, Link, Route } from "svelte-navigator";
 
@@ -35,28 +41,26 @@
       </div>
     </div>
     <div>
-      <Link to="/"><a href=" " class="navLinks">Welkom</a></Link>
+      <Link to="/"><p class="navLinks">Welkom</p></Link>
+    </div>
+  
+    <div>
+      <Link to="/voor-wie"><p class="navLinks">Voor Wie</p></Link>
     </div>
     <div>
-      <Link to="/"><a href=" " class="navLinks">domeinen</a></Link>
+      <Link to="/doe-mee"><p  class="navLinks">Doe mee</p></Link>
     </div>
     <div>
-      <Link to="/voor-wie"><a href=" " class="navLinks">Voor Wie</a></Link>
+      <Link to="/producten"><p class="navLinks">Producten</p></Link>
     </div>
     <div>
-      <Link to="/doe-mee"><a href=" " class="navLinks">Doe mee</a></Link>
+      <Link to="/agenda"><p class="navLinks">Agenda</p></Link>
     </div>
     <div>
-      <Link to="/"><a href=" " class="navLinks">Producten</a></Link>
+      <Link to="/kennis-bank"><p class="navLinks">kennis Bank</p></Link>
     </div>
     <div>
-      <Link to="/"><a href=" " class="navLinks">Agenda</a></Link>
-    </div>
-    <div>
-      <Link to="/"><a href=" " class="navLinks">kennis Bank</a></Link>
-    </div>
-    <div>
-      <Link to="/"><a href=" " class="navLinks">Login</a></Link>
+      <Link to="/login"><p class="navLinks">Login</p></Link>
     </div>
     
   </nav>
@@ -70,7 +74,7 @@ header{
   position: fixed;
   width: 100%;
 }
-p{
+.txt > p{
   color: aliceblue;
   padding: 0;
   margin: 0;
@@ -126,13 +130,13 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-a{
+.navLinks{
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
 
-a::after {
+.navLinks::after {
   position: absolute;
   left: 0;
   content: "";
@@ -144,7 +148,7 @@ a::after {
   transition: transform 0.3s;
   transform-origin: right top;
 }
-a:hover::after {
+.navLinks:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
 }

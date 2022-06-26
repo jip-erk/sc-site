@@ -1,5 +1,9 @@
 <script>
+  import { onMount } from "svelte";
 
+onMount(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 <section>
@@ -32,6 +36,7 @@ span{
 }
 
 .center{
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,10 +45,11 @@ span{
 }
 
 section{
-    background-image: url('/src/assets/bg-img');
+    background-image: url('../src/assets/22.png');
     background-size: cover;
     height: 100vh;
     width: 100%;
+
 }
 
 button{

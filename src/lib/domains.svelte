@@ -1,6 +1,12 @@
 <script>
 export let domain;
 export let domain_img;
+
+import { onMount } from "svelte";
+
+onMount(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 <section tabindex="-1" id={domain}>

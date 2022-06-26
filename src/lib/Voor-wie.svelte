@@ -1,5 +1,9 @@
 <script>
+  import { onMount } from "svelte";
 
+onMount(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 
 <section id="first">
@@ -12,7 +16,7 @@
     </div>
 </section>
 <section>
-    <div class="cont">
+    <div id="cont" class="cont">
          <div class="img">
             <!-- <img alt="img" src=> -->
          </div>
@@ -65,7 +69,7 @@ span{
 }
 
 #first{
-    background-image: url('https://i.imgur.com/4rPdrXI.jpg');
+    background-image: url('https://images.pexels.com/photos/1682497/pexels-photo-1682497.jpeg?auto=compress&cs=tinysrgb&w=1600');
     background-size: cover;
     height: 100vh;
     width: 100%;

@@ -34,6 +34,11 @@ function ClickedDomain(Card, card_img){
     $myStore.img = card_img;
 } 
 
+import { onMount } from "svelte";
+
+onMount(() => {
+  window.scrollTo(0, 0);
+});
 
 </script>
 

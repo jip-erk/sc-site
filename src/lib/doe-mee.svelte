@@ -5,14 +5,14 @@
 <section id="first">
     <div class="center">
         <span>Doe Mee!</span>
-        <a href="#cont">
+        <a href="#2">
         <button>Klik hier</button>
         </a>
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
     </div>
 </section>
 <section>
-    <div class="cont">
+    <div class="cont" id="2">
                     <h1>Doe Mee!</h1>
                     Naast het ontvangen van de nieuwsbrief en daarmee vriend worden van Nieuw Brabant Zuid-Oost kun je bij ons aan te sluiten of nader kennis te maken: 
 
